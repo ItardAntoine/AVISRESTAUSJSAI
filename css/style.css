@@ -1,0 +1,255 @@
+body 
+{
+display: block;
+position: relative;
+opacity: 1;
+background-image: url("https://previews.123rf.com/images/kzenon/kzenon1303/kzenon130300613/18687145-les-jeunes-gens-qui-mangent-dans-un-restaurant-tha%C3%AFlandais-ils-manger-avec-des-baguettes.jpg");
+
+}
+
+
+
+
+
+
+#main-title{
+	
+text-align: center;
+margin: 1em 0 0.5em 0;
+font-weight: 600;
+font-family: 'Titillium Web', sans-serif;
+position: relative;  
+font-size: 36px;
+line-height: 40px;
+padding: 15px;
+background: #355681;
+box-shadow: 
+	inset 0 0 0 1px rgba(53,86,129, 0.4), 
+	inset 0 0 5px rgba(53,86,129, 0.5),
+	inset -285px 0 35px white;
+border-radius: 0 10px 0 10px;
+
+}
+
+#slogan{
+
+text-align: center;
+margin: 1em 0 0.5em 0;
+font-weight: normal;
+position: relative;
+text-shadow: 0 -1px rgba(0,0,0,0.6);
+font-size: 28px;
+line-height: 40px;
+background: #355681;
+background: rgba(53,86,129, 0.8);
+border: 1px solid #fff;
+padding: 5px 15px;
+color: white;
+border-radius: 0 10px 0 10px;
+box-shadow: inset 0 0 5px rgba(53,86,129, 0.5);
+font-family: 'Muli', sans-serif;
+
+}
+
+#filter-form{
+
+position:relative;
+top:0;
+right:0;
+z-index: 1;
+background: #355681;
+max-width: 360px;
+margin: 0 auto 100px;
+padding: 45px;
+text-align: center;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+#minmaxbutton{
+
+font-family: "Roboto", sans-serif;
+text-transform: uppercase;
+outline: 0;
+width: 100%;
+border: 0;
+padding: 15px;
+color: black;
+font-size: 14px;
+border: 1px solid blue;
+
+cursor: pointer;
+
+}
+
+#validationbutton{
+
+font-family: "Roboto", sans-serif;
+background-color: #355681;
+color: white;
+text-transform: uppercase;
+
+
+
+}
+
+#main-container{
+	display: flex;
+	position: relative;
+
+}
+
+.form-comment{
+
+position: relative;
+top:0;
+right:0;
+z-index: 1;
+background: #355681;
+max-width: 220px;
+margin: 0 auto 10px;
+padding: 10px;
+text-align: left;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+margin-left: 0;
+}
+
+
+#map {
+	height: 600px;
+	width : calc(100% - 430px);
+	box-shadow: 1px 1px 6px 1px grey;
+	margin : 1px auto;
+    z-index: 0;
+    position: relative;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+#pop-up-view{
+
+	position: absolute;
+	left : 0px;
+	top : 0px;
+	width : calc(100% - 430px);
+	height: 600px;
+	background-color: rgba(53,86,129,0.9);
+	box-shadow: 1px 1px 6px 1px silver;
+	z-index: 1;
+	display: none;
+
+
+}
+
+#pop-up-view-content{
+	position: absolute;
+	left : 0;
+	top : 0; 
+	width: 98.5%;
+	height : 100%;
+	z-index: 0;
+	overflow: auto;
+	color: white;
+	padding: 10px 10px;
+
+
+
+
+
+}
+
+.pop-up-view-btn{
+
+	position: absolute;
+	right : 60px;
+	top : 10px;
+	font-size: 30px;
+	z-index: 1;
+	color : white;
+}
+
+.restaurant-ctn-aside{
+	background-color: rgba(53,86,129,0.9);
+	height: 250px;
+	box-shadow: 1px 1px 6px 1px grey;
+	border-radius: 10px;
+	width: 368px;
+	padding : 20px;
+	border: 1px solid blue;
+	margin : 1px auto;
+	margin-left: 5px;
+
+    
+}
+
+#restaurant-list{
+
+	height: 600px;
+	overflow: auto;
+	width: 430px;
+
+
+
+}
+
+.star-ctn-Elt{
+
+	color: yellow;
+}
+
+.euros-ctn-Elt{
+
+	color : black;
+}
+
+#number {
+  width: 3em;
+  display: block;
+}
+
+
+@media all and (max-width: 700px){
+
+	#main-container{
+
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+
+	#map {
+
+		height: 500px;
+		width : 90%;
+		margin : 10px 5%;
+	}
+
+	#pop-up-view{
+
+		width : 90%;
+		height: 500px;
+		left : 25px;
+
+
+	}
+
+	.restaurant-ctn-aside{
+
+	
+		width: calc(100% - 40px);
+	    
+	}
+
+	#restaurant-list{
+
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+
+}
+/*
+form input[placeholder ="min"]
+*/

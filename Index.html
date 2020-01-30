@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+  
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <title>P7</title>
+</head>
+
+<body>
+    
+    <div id="error-geolocation"></div>
+
+    <h1 id ="main-title"> Avisrestaus </h1>
+
+    <h3 id ="slogan"> Trouver les meilleurs restaurants près de chez vous ! </h3>
+
+    <form id="filter-form">  
+            <input id="minmaxbutton" type="number" placeholder="min"
+       min="1" max="5">
+
+            <input id="minmaxbutton" type="number" placeholder="max" 
+       min="1" max="5">
+
+            <input id="validationbutton" type="submit" value="filtrer vos restaurants">
+    </form>
+
+    <div id="main-container">
+
+        <div id="map"></div>
+
+        <div id="restaurant-list"> </div>
+
+        <div id="pop-up-view"> 
+
+            <div id= "pop-up-view-content"></div>
+
+            <i class="fas fa-times pop-up-view-btn"></i>
+
+        </div>
+
+    </div>
+
+    <br></br>
+
+
+
+
+
+
+    <script src = "font/fontawesome/all.js"> </script>
+    <!--<script src="js/ajax.js"></script>-->
+    <script src ="js/utilities.js"></script>
+    <script src = "js/global.js"> </script>
+    <script src = "js/marker.js"> </script>
+    <script src = "js/restaurant.js"> </script>
+    <script src = "js/map.js"> </script>
+    <script src = "js/script.js"> </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfnC-049zVFpP0doxT3fhqditN4_N1LVw&libraries=places&callback=init"
+    async defer></script>
+
+
+
+
+</body>
+
+</html>
